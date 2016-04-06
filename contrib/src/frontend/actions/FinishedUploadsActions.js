@@ -50,7 +50,7 @@ export function getFinishedUploads () {
     }).then(
       (response) => dispatch(receiveFinishedUploads(response),
         (error) => dispatch(finishedUploadsError(error))
-      )
+      ).catch((error) => dispatch(finishedUploadsError(error)))
     )
   }
 }

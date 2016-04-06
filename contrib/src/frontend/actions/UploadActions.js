@@ -76,6 +76,7 @@ export function uploadFile (file) {
     }).then(
       (response) => dispatch(uploadFinished(id, response),
         (error) => dispatch(uploadError(id, error))
-      ))
+      ).catch((error) => dispatch(finishedUploadsError(error)))
+    )
   }
 }
