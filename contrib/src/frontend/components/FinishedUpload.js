@@ -3,7 +3,7 @@ import copy from 'copy-to-clipboard'
 
 export default React.createClass({
   propTypes: {
-    finishedUpload: PropTypes.array.isRequired
+    finishedUpload: PropTypes.object.isRequired
   },
   handleClickCopyToClipboard () {
     copy(this.props.finishedUpload.url)

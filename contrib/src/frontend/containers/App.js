@@ -12,7 +12,7 @@ const App = React.createClass({
     dispatch: PropTypes.func.isRequired,
     uploadActions: PropTypes.object.isRequired,
     finishedUploadActions: PropTypes.object.isRequired,
-    uploads: PropTypes.array.isRequired,
+    uploads: PropTypes.object.isRequired,
     routing: PropTypes.object.isRequired
   },
   componentWillMount () {
